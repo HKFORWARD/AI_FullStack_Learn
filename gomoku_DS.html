@@ -1,0 +1,320 @@
+# 五子棋游戏 HTML 实现
+
+以下是一个完整的五子棋游戏 HTML 实现，所有代码都在一个文件中：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋游戏</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .board {
+            display: grid;
+            grid-template-columns: repeat(15, 30px);
+            grid-template-rows: repeat(15, 30px);
+            background-color: #dcb35c;
+            border: 2px solid #8d6e3a;
+            position: relative;
+        }
+        
+        .cell {
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cell::before, .cell::after {
+            content: '';
+            position: absolute;
+            background-color: #000;
+        }
+        
+        .cell::before {
+            width: 100%;
+            height: 1px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        
+        .cell::after {
+            width: 1px;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+        
+        .piece {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            z-index: 1;
+        }
+        
+        .black {
+            background: radial-gradient(circle at 30% 30%, #666, #000);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        
+        .white {
+            background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .status {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            height: 24px;
+        }
+        
+        .star-point {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>五子棋游戏</h1>
+    <div class="game-container">
+        <div class="status" id="status">黑方回合</div>
+        <div class="board" id="board"></div>
+        <div class="controls">
+            <button id="restart">重新开始</button>
+            <button id="undo">悔棋</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boardSize = 15;
+            const boardElement = document.getElementById('board');
+            const statusElement = document.getElementById('status');
+            const restartButton = document.getElementById('restart');
+            const undoButton = document.getElementById('undo');
+            
+            let board = Array(boardSize).fill().map(() => Array(boardSize).fill(0));
+            let currentPlayer = 1; // 1 for black, 2 for white
+            let gameOver = false;
+            let moveHistory = [];
+            
+            // Initialize the board
+            function initBoard() {
+                boardElement.innerHTML = '';
+                
+                // Create star points (traditional Go positions)
+                const starPoints = [
+                    [3, 3], [3, 11], [3, 7],
+                    [7, 3], [7, 11], [7, 7],
+                    [11, 3], [11, 11], [11, 7]
+                ];
+                
+                starPoints.forEach(([x, y]) => {
+                    const star = document.createElement('div');
+                    star.className = 'star-point';
+                    star.style.left = `${x * 30 + 15}px`;
+                    star.style.top = `${y * 30 + 15}px`;
+                    boardElement.appendChild(star);
+                });
+                
+                // Create cells
+                for (let y = 0; y < boardSize; y++) {
+                    for (let x = 0; x < boardSize; x++) {
+                        const cell = document.createElement('div');
+                        cell.className = 'cell';
+                        cell.dataset.x = x;
+                        cell.dataset.y = y;
+                        cell.addEventListener('click', handleCellClick);
+                        boardElement.appendChild(cell);
+                    }
+                }
+            }
+            
+            // Handle cell click
+            function handleCellClick(e) {
+                if (gameOver) return;
+                
+                const x = parseInt(e.target.dataset.x);
+                const y = parseInt(e.target.dataset.y);
+                
+                if (board[y][x] !== 0) return;
+                
+                // Make move
+                board[y][x] = currentPlayer;
+                moveHistory.push({x, y, player: currentPlayer});
+                
+                // Draw piece
+                const piece = document.createElement('div');
+                piece.className = `piece ${currentPlayer === 1 ? 'black' : 'white'}`;
+                piece.style.left = `${x * 30 + 2}px`;
+                piece.style.top = `${y * 30 + 2}px`;
+                boardElement.appendChild(piece);
+                
+                // Check for win
+                if (checkWin(x, y, currentPlayer)) {
+                    statusElement.textContent = `${currentPlayer === 1 ? '黑方' : '白方'}获胜！`;
+                    gameOver = true;
+                    return;
+                }
+                
+                // Switch player
+                currentPlayer = currentPlayer === 1 ? 2 : 1;
+                statusElement.textContent = `${currentPlayer === 1 ? '黑方' : '白方'}回合`;
+            }
+            
+            // Check for winning condition
+            function checkWin(x, y, player) {
+                const directions = [
+                    [1, 0],   // horizontal
+                    [0, 1],   // vertical
+                    [1, 1],   // diagonal down-right
+                    [1, -1]   // diagonal up-right
+                ];
+                
+                for (const [dx, dy] of directions) {
+                    let count = 1;
+                    
+                    // Check in positive direction
+                    for (let i = 1; i < 5; i++) {
+                        const nx = x + i * dx;
+                        const ny = y + i * dy;
+                        if (nx >= 0 && nx < boardSize && ny >= 0 && ny < boardSize && board[ny][nx] === player) {
+                            count++;
+                        } else {
+                            break;
+                        }
+                    }
+                    
+                    // Check in negative direction
+                    for (let i = 1; i < 5; i++) {
+                        const nx = x - i * dx;
+                        const ny = y - i * dy;
+                        if (nx >= 0 && nx < boardSize && ny >= 0 && ny < boardSize && board[ny][nx] === player) {
+                            count++;
+                        } else {
+                            break;
+                        }
+                    }
+                    
+                    if (count >= 5) return true;
+                }
+                
+                return false;
+            }
+            
+            // Restart game
+            function restartGame() {
+                board = Array(boardSize).fill().map(() => Array(boardSize).fill(0));
+                currentPlayer = 1;
+                gameOver = false;
+                moveHistory = [];
+                statusElement.textContent = '黑方回合';
+                initBoard();
+            }
+            
+            // Undo last move
+            function undoMove() {
+                if (gameOver || moveHistory.length === 0) return;
+                
+                const lastMove = moveHistory.pop();
+                board[lastMove.y][lastMove.x] = 0;
+                currentPlayer = lastMove.player;
+                statusElement.textContent = `${currentPlayer === 1 ? '黑方' : '白方'}回合`;
+                
+                // Remove the last piece from DOM
+                const pieces = document.querySelectorAll('.piece');
+                if (pieces.length > 0) {
+                    pieces[pieces.length - 1].remove();
+                }
+            }
+            
+            // Event listeners
+            restartButton.addEventListener('click', restartGame);
+            undoButton.addEventListener('click', undoMove);
+            
+            // Initialize the game
+            initBoard();
+        });
+    </script>
+</body>
+</html>
+```
+
+## 游戏功能说明
+
+1. **游戏规则**：
+   - 标准的15×15五子棋棋盘
+   - 黑方先行，轮流落子
+   - 先在横、竖或斜方向连成五子的一方获胜
+
+2. **界面功能**：
+   - 显示当前回合玩家
+   - 重新开始按钮
+   - 悔棋按钮（可撤销上一步）
+
+3. **棋盘设计**：
+   - 传统木质棋盘外观
+   - 包含标准的星位标记
+   - 黑白棋子有立体效果
+
+4. **使用方法**：
+   - 将代码复制到一个HTML文件中
+   - 用浏览器打开该文件即可开始游戏
+
+这个实现是完全自包含的，不需要任何外部依赖，所有HTML、CSS和JavaScript都在一个文件中。
