@@ -345,3 +345,36 @@ To disable this warning, you can either:
 [I 2025-06-09 20:48:56.866 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
 [I 2025-06-09 20:50:56.911 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
 [I 2025-06-09 21:20:37.205 ServerApp] Starting buffering for 54e20026-00cf-4a0e-ad55-89c51912e5eb:a00d428c-4289-46cd-9802-721c4a54755a
+[I 2025-06-09 21:33:49.742 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 21:34:00.326 ServerApp] Saving file at /lesson4/deepseek_api.ipynb
+[I 2025-06-09 21:34:07.640 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:da55709e-248b-4d6e-a043-621972bb1f8c
+[I 2025-06-09 21:34:11.489 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[W 2025-06-09 21:34:19.038 ServerApp] Notebook lesson4/rag_milvus_deepseek.ipynb is not trusted
+[I 2025-06-09 21:34:19.181 ServerApp] Connecting to kernel 54e20026-00cf-4a0e-ad55-89c51912e5eb.
+[I 2025-06-09 21:35:19.100 ServerApp] Kernel restarted: 54e20026-00cf-4a0e-ad55-89c51912e5eb
+[I 2025-06-09 21:35:19.103 ServerApp] Starting buffering for 54e20026-00cf-4a0e-ad55-89c51912e5eb:801c90da-4d12-4099-9504-17234b535227
+[I 2025-06-09 21:35:19.108 ServerApp] Connecting to kernel 54e20026-00cf-4a0e-ad55-89c51912e5eb.
+[I 2025-06-09 21:35:19.108 ServerApp] Restoring connection for 54e20026-00cf-4a0e-ad55-89c51912e5eb:801c90da-4d12-4099-9504-17234b535227
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-06-09 21:36:19.078 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 21:37:25.351 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 21:37:50.130 ServerApp] Kernel restarted: 54e20026-00cf-4a0e-ad55-89c51912e5eb
+[I 2025-06-09 21:37:50.135 ServerApp] Starting buffering for 54e20026-00cf-4a0e-ad55-89c51912e5eb:801c90da-4d12-4099-9504-17234b535227
+[I 2025-06-09 21:37:50.140 ServerApp] Connecting to kernel 54e20026-00cf-4a0e-ad55-89c51912e5eb.
+[I 2025-06-09 21:37:50.140 ServerApp] Restoring connection for 54e20026-00cf-4a0e-ad55-89c51912e5eb:801c90da-4d12-4099-9504-17234b535227
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-06-09 21:38:56.540 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
