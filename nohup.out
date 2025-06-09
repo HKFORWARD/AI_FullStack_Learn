@@ -1,0 +1,304 @@
+nohup: jupyter: No such file or directory
+nohup: jupyter: No such file or directory
+nohup: jupyter: No such file or directory
+usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+               [--paths] [--json] [--debug]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+options:
+  -h, --help     show this help message and exit
+  --version      show the versions of core jupyter packages and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths. Add --json for machine-readable
+                 format.
+  --json         output paths as machine-readable json
+  --debug        output debug information about paths
+
+Available subcommands: kernel kernelspec migrate run troubleshoot
+
+Jupyter command `jupyter-lab` not found.
+[I 2025-06-09 18:16:59.363 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:16:59.365 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:16:59.366 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:16:59.367 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:16:59.367 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:16:59.521 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:16:59.538 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:16:59.539 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:16:59.539 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:16:59.540 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/lib/python3.12/site-packages/jupyterlab
+[I 2025-06-09 18:16:59.540 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/share/jupyter/lab
+[I 2025-06-09 18:16:59.540 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:16:59.570 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:16:59.571 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:16:59.571 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:16:59.571 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-06-09 18:16:59.571 ServerApp] http://localhost:8001/lab?token=...
+[I 2025-06-09 18:16:59.571 ServerApp]     http://127.0.0.1:8001/lab?token=...
+[I 2025-06-09 18:16:59.571 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:16:59.679 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:17:01.815 LabApp] Build is up to date
+[I 2025-06-09 18:20:01.058 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:20:01.060 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:20:01.061 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:20:01.062 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:20:01.062 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:22:07.667 LabApp] Build is up to date
+[I 2025-06-09 18:22:24.915 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:22:24.917 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:22:24.918 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:22:24.919 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:22:24.919 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:22:25.084 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:22:25.102 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:22:25.103 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:22:25.103 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:22:25.104 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/lib/python3.12/site-packages/jupyterlab
+[I 2025-06-09 18:22:25.104 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/share/jupyter/lab
+[I 2025-06-09 18:22:25.104 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:22:25.138 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:22:25.138 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:22:25.139 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:22:25.139 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:22:25.139 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-06-09 18:22:25.139 ServerApp] http://localhost:8002/lab?token=...
+[I 2025-06-09 18:22:25.139 ServerApp]     http://127.0.0.1:8002/lab?token=...
+[I 2025-06-09 18:22:25.139 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:22:25.277 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:22:27.519 LabApp] Build is up to date
+[I 2025-06-09 18:22:39.423 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:22:39.424 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:22:39.425 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:22:39.426 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:22:39.426 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:22:53.779 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:22:53.780 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:22:53.781 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:22:53.782 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:22:53.782 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:23:30.810 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:23:30.812 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:23:30.812 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:23:30.813 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:23:30.813 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:23:36.344 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:23:36.344 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:23:36.344 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:23:36.344 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:23:36.365 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:23:36.365 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:23:36.365 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:23:36.365 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:23:36.366 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:23:36.366 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:23:36.366 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:23:36.366 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:23:36.367 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:23:36.367 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:23:36.367 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:23:36.367 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:23:36.368 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:23:36.368 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:23:36.368 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:23:36.368 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:23:36.368 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:23:36.404 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:23:36.404 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:23:36.404 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:23:36.405 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:23:36.405 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8003 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8003 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:23:36.406 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:23:36.406 ServerApp] http://localhost:8003/lab?token=...
+[I 2025-06-09 18:23:36.406 ServerApp]     http://127.0.0.1:8003/lab?token=...
+[I 2025-06-09 18:23:36.406 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:23:36.406 ServerApp] The port 8004 is already in use, trying another port.
+[I 2025-06-09 18:23:36.406 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:23:36.406 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:23:36.406 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:23:36.406 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:23:36.406 ServerApp] http://localhost:8004/lab?token=...
+[I 2025-06-09 18:23:36.406 ServerApp] http://localhost:8003/lab?token=...
+[I 2025-06-09 18:23:36.406 ServerApp]     http://127.0.0.1:8003/lab?token=...
+[I 2025-06-09 18:23:36.406 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:23:36.406 ServerApp]     http://127.0.0.1:8004/lab?token=...
+[I 2025-06-09 18:23:36.406 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:23:36.407 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:23:36.407 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:23:36.407 ServerApp] http://localhost:7981/lab?token=...
+[I 2025-06-09 18:23:36.407 ServerApp]     http://127.0.0.1:7981/lab?token=...
+[I 2025-06-09 18:23:36.407 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[E 2025-06-09 18:23:36.412 ServerApp] Exception in callback functools.partial(<bound method ServerApp._bind_http_server of <jupyter_server.serverapp.ServerApp object at 0x10a721160>>)
+    Traceback (most recent call last):
+      File "/Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/tornado/ioloop.py", line 758, in _run_callback
+        ret = callback()
+      File "/Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyter_server/serverapp.py", line 2628, in _bind_http_server
+        success = self._bind_http_server_unix() if self.sock else self._bind_http_server_tcp()
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+      File "/Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyter_server/serverapp.py", line 2661, in _bind_http_server_tcp
+        self.http_server.listen(self.port, self.ip)
+        ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+      File "/Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/tornado/tcpserver.py", line 183, in listen
+        sockets = bind_sockets(
+            port,
+        ...<4 lines>...
+            reuse_port=reuse_port,
+        )
+      File "/Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/tornado/netutil.py", line 162, in bind_sockets
+        sock.bind(sockaddr)
+        ~~~~~~~~~^^^^^^^^^^
+    OSError: [Errno 48] Address already in use
+[I 2025-06-09 18:23:36.518 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:23:36.518 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:23:36.520 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:23:36.520 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:23:39.099 LabApp] Build is up to date
+[I 2025-06-09 18:23:39.561 LabApp] Build is up to date
+[I 2025-06-09 18:23:40.497 LabApp] Build is up to date
+[I 2025-06-09 18:23:40.523 LabApp] Build is up to date
+[I 2025-06-09 18:24:02.175 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:24:02.177 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:24:02.177 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:24:02.178 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:24:02.178 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:24:16.523 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:24:16.537 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:24:16.538 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:24:16.538 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:24:16.539 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:24:16.539 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:24:16.539 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:24:16.558 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:24:16.559 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:24:16.559 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:24:16.559 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:24:16.559 ServerApp] The port 8003 is already in use, trying another port.
+[I 2025-06-09 18:24:16.560 ServerApp] The port 8004 is already in use, trying another port.
+[I 2025-06-09 18:24:16.560 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:24:16.560 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:24:16.560 ServerApp] http://localhost:8070/lab?token=...
+[I 2025-06-09 18:24:16.560 ServerApp]     http://127.0.0.1:8070/lab?token=...
+[I 2025-06-09 18:24:16.560 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:24:16.645 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:24:19.019 LabApp] Build is up to date
+[I 2025-06-09 18:24:55.881 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:24:55.882 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:24:55.883 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:24:55.884 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:24:55.884 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:25:01.126 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:25:01.141 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:25:01.142 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:25:01.142 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:25:01.143 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:25:01.143 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:25:01.143 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:25:01.164 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:25:01.165 ServerApp] The port 8000 is already in use, trying another port.
+[I 2025-06-09 18:25:01.165 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:25:01.165 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:25:01.166 ServerApp] The port 8003 is already in use, trying another port.
+[I 2025-06-09 18:25:01.166 ServerApp] The port 8004 is already in use, trying another port.
+[I 2025-06-09 18:25:01.166 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:25:01.166 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:25:01.166 ServerApp] http://localhost:8044/lab?token=...
+[I 2025-06-09 18:25:01.166 ServerApp]     http://127.0.0.1:8044/lab?token=...
+[I 2025-06-09 18:25:01.166 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:25:01.255 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:25:03.418 LabApp] Build is up to date
+[W 2025-06-09 18:25:12.813 ServerApp] Notebook lesson4/deepseek_api.ipynb is not trusted
+[I 2025-06-09 18:25:12.929 ServerApp] Kernel started: 1c852af5-fd12-4299-aa12-c70f9aab4b8c
+[I 2025-06-09 18:25:13.214 ServerApp] Connecting to kernel 1c852af5-fd12-4299-aa12-c70f9aab4b8c.
+[W 2025-06-09 18:25:13.215 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2025-06-09 18:25:13.222 ServerApp] Starting buffering for 1c852af5-fd12-4299-aa12-c70f9aab4b8c:3c2f5540-e817-4fd2-b123-3925a5dae353
+[I 2025-06-09 18:25:13.227 ServerApp] Connecting to kernel 1c852af5-fd12-4299-aa12-c70f9aab4b8c.
+[I 2025-06-09 18:25:13.239 ServerApp] Connecting to kernel 1c852af5-fd12-4299-aa12-c70f9aab4b8c.
+[I 2025-06-09 18:26:40.808 ServerApp] Starting buffering for 1c852af5-fd12-4299-aa12-c70f9aab4b8c:46a282c5-c0c5-4832-9032-effef687cbb7
+[I 2025-06-09 18:27:29.830 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-09 18:27:29.832 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-06-09 18:27:29.833 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-06-09 18:27:29.834 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-06-09 18:27:29.834 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-09 18:27:38.096 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-09 18:27:38.112 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-09 18:27:38.113 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-09 18:27:38.113 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-09 18:27:38.114 LabApp] JupyterLab extension loaded from /Users/cyberpaws/development/miniconda3/envs/deepseek/lib/python3.13/site-packages/jupyterlab
+[I 2025-06-09 18:27:38.114 LabApp] JupyterLab application directory is /Users/cyberpaws/development/miniconda3/envs/deepseek/share/jupyter/lab
+[I 2025-06-09 18:27:38.115 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-09 18:27:38.135 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-09 18:27:38.135 ServerApp] The port 8001 is already in use, trying another port.
+[I 2025-06-09 18:27:38.136 ServerApp] The port 8002 is already in use, trying another port.
+[I 2025-06-09 18:27:38.136 ServerApp] The port 8003 is already in use, trying another port.
+[I 2025-06-09 18:27:38.136 ServerApp] The port 8004 is already in use, trying another port.
+[I 2025-06-09 18:27:38.137 ServerApp] Serving notebooks from local directory: /Users/cyberpaws/development/AIGC/learning/AI_FullStack/AI_FullStack_Learn
+[I 2025-06-09 18:27:38.137 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-06-09 18:27:38.137 ServerApp] http://localhost:8005/lab?token=...
+[I 2025-06-09 18:27:38.137 ServerApp]     http://127.0.0.1:8005/lab?token=...
+[I 2025-06-09 18:27:38.137 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-06-09 18:27:38.228 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-06-09 18:27:40.442 LabApp] Build is up to date
+[W 2025-06-09 18:27:40.475 ServerApp] Notebook lesson4/deepseek_api.ipynb is not trusted
+[I 2025-06-09 18:27:40.629 ServerApp] Kernel started: 42800d31-212a-46db-b5b2-bed5ab90d374
+[I 2025-06-09 18:27:40.946 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 18:27:40.947 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[W 2025-06-09 18:27:40.948 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2025-06-09 18:27:40.959 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 18:29:26.423 ServerApp] Saving file at /lesson4/deepseek_api.ipynb
+[I 2025-06-09 18:30:34.101 ServerApp] Kernel started: 6c7170f6-7dc3-427d-abb4-a40d8f2a6226
+[I 2025-06-09 18:30:34.449 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 18:30:39.743 ServerApp] Saving file at /lesson4/claude_api.ipynb
+[I 2025-06-09 18:30:50.839 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:7ac858ea-f86b-41e6-9004-a6f436df1f05
+[I 2025-06-09 18:30:50.840 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:c06441ae-c50b-4425-8284-e36cfaa7ebcd
+[I 2025-06-09 18:30:51.473 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 18:30:51.488 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 18:30:51.498 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:92c388a2-1990-42f7-a9af-70ab53c1a1c5
+[I 2025-06-09 18:30:51.499 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:e0cd4c83-727f-4229-847e-a55ccc0734c8
+[I 2025-06-09 18:30:52.014 LabApp] Build is up to date
+[W 2025-06-09 18:30:52.016 ServerApp] Notebook lesson4/claude_api.ipynb is not trusted
+[I 2025-06-09 18:30:52.132 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 18:30:52.146 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 18:31:33.416 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:c5ff642b-5987-449d-96bd-b47788383384
+[I 2025-06-09 18:31:33.417 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:05f0f30c-994b-4f85-8932-9996f246185f
+[I 2025-06-09 18:31:33.754 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 18:31:33.766 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 18:31:33.782 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:c590f085-3d66-44c3-bed2-56e0fb9a2cc3
+[I 2025-06-09 18:31:33.783 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:60f83352-3354-40b5-b868-6230411ad941
+[I 2025-06-09 18:31:34.256 LabApp] Build is up to date
+[W 2025-06-09 18:31:34.261 ServerApp] Notebook lesson4/claude_api.ipynb is not trusted
+[I 2025-06-09 18:31:34.406 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 18:31:34.420 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 18:31:45.360 ServerApp] Kernel restarted: 6c7170f6-7dc3-427d-abb4-a40d8f2a6226
+[I 2025-06-09 18:31:45.362 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:cef97ead-f742-4924-831c-c0926d0b981b
+[I 2025-06-09 18:31:45.364 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 18:31:45.364 ServerApp] Restoring connection for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:cef97ead-f742-4924-831c-c0926d0b981b
+[I 2025-06-09 18:33:34.889 ServerApp] Saving file at /lesson4/claude_api.ipynb
