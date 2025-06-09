@@ -302,3 +302,46 @@ Jupyter command `jupyter-lab` not found.
 [I 2025-06-09 18:31:45.364 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
 [I 2025-06-09 18:31:45.364 ServerApp] Restoring connection for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:cef97ead-f742-4924-831c-c0926d0b981b
 [I 2025-06-09 18:33:34.889 ServerApp] Saving file at /lesson4/claude_api.ipynb
+[I 2025-06-09 20:42:10.650 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:12fac867-e0a4-4953-b690-78c5f59e639f
+[I 2025-06-09 20:42:11.034 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:cef97ead-f742-4924-831c-c0926d0b981b
+[I 2025-06-09 20:42:16.316 ServerApp] Connecting to kernel 42800d31-212a-46db-b5b2-bed5ab90d374.
+[I 2025-06-09 20:42:16.330 ServerApp] Connecting to kernel 6c7170f6-7dc3-427d-abb4-a40d8f2a6226.
+[I 2025-06-09 20:42:16.332 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:08e6fb52-1b29-43dd-8e79-cf69dbb6c74f
+[I 2025-06-09 20:42:16.337 ServerApp] Starting buffering for 6c7170f6-7dc3-427d-abb4-a40d8f2a6226:dabc575f-0ce6-4d62-ba8b-9a1bd99299b8
+[I 2025-06-09 20:42:16.696 LabApp] Build is up to date
+[W 2025-06-09 20:42:18.610 ServerApp] Notebook lesson4/rag_milvus_deepseek.ipynb is not trusted
+[I 2025-06-09 20:42:18.814 ServerApp] Kernel started: 54e20026-00cf-4a0e-ad55-89c51912e5eb
+[I 2025-06-09 20:42:19.259 ServerApp] Connecting to kernel 54e20026-00cf-4a0e-ad55-89c51912e5eb.
+[I 2025-06-09 20:42:36.693 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[W 2025-06-09 20:42:36.695 ServerApp] Notebook lesson4/rag_milvus_deepseek.ipynb is not trusted
+[I 2025-06-09 20:42:42.597 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[W 2025-06-09 20:42:42.598 ServerApp] Notebook lesson4/rag_milvus_deepseek.ipynb is not trusted
+[I 2025-06-09 20:43:37.410 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[W 2025-06-09 20:43:37.411 ServerApp] Notebook lesson4/rag_milvus_deepseek.ipynb is not trusted
+[I 2025-06-09 20:45:37.439 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[W 2025-06-09 20:45:37.439 ServerApp] Notebook lesson4/rag_milvus_deepseek.ipynb is not trusted
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-06-09 20:46:56.834 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 20:47:12.650 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 20:47:55.195 ServerApp] Kernel restarted: 54e20026-00cf-4a0e-ad55-89c51912e5eb
+[I 2025-06-09 20:47:55.199 ServerApp] Starting buffering for 54e20026-00cf-4a0e-ad55-89c51912e5eb:a00d428c-4289-46cd-9802-721c4a54755a
+[I 2025-06-09 20:47:55.203 ServerApp] Connecting to kernel 54e20026-00cf-4a0e-ad55-89c51912e5eb.
+[I 2025-06-09 20:47:55.203 ServerApp] Restoring connection for 54e20026-00cf-4a0e-ad55-89c51912e5eb:a00d428c-4289-46cd-9802-721c4a54755a
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-06-09 20:48:56.866 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 20:50:56.911 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 21:20:37.205 ServerApp] Starting buffering for 54e20026-00cf-4a0e-ad55-89c51912e5eb:a00d428c-4289-46cd-9802-721c4a54755a
