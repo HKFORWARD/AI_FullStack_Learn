@@ -378,3 +378,41 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 [I 2025-06-09 21:38:56.540 ServerApp] Saving file at /lesson4/rag_milvus_deepseek.ipynb
+[I 2025-06-09 21:45:39.246 ServerApp] Starting buffering for 54e20026-00cf-4a0e-ad55-89c51912e5eb:801c90da-4d12-4099-9504-17234b535227
+[I 2025-06-09 21:45:51.075 ServerApp] Starting buffering for 42800d31-212a-46db-b5b2-bed5ab90d374:8940c24c-e1f9-49b1-9823-aaaeb83e58e9
+[I 2025-06-09 21:46:07.124 ServerApp] Connecting to kernel 54e20026-00cf-4a0e-ad55-89c51912e5eb.
+[I 2025-06-09 21:46:22.392 ServerApp] Kernel started: 8f476dd7-04a7-45ab-9533-e66d89fcca62
+[I 2025-06-09 21:46:22.900 ServerApp] Connecting to kernel 8f476dd7-04a7-45ab-9533-e66d89fcca62.
+[I 2025-06-09 21:48:13.725 ServerApp] Saving file at /lesson4/rag_milvus_deepseek2.ipynb
+[I 2025-06-09 21:48:18.096 ServerApp] Kernel restarted: 8f476dd7-04a7-45ab-9533-e66d89fcca62
+[I 2025-06-09 21:48:18.099 ServerApp] Starting buffering for 8f476dd7-04a7-45ab-9533-e66d89fcca62:a4aea674-de4c-4827-b46c-da98015a6d62
+[I 2025-06-09 21:48:18.103 ServerApp] Connecting to kernel 8f476dd7-04a7-45ab-9533-e66d89fcca62.
+[I 2025-06-09 21:48:18.103 ServerApp] Restoring connection for 8f476dd7-04a7-45ab-9533-e66d89fcca62:a4aea674-de4c-4827-b46c-da98015a6d62
+[W 2025-06-09 21:48:24.376 ServerApp] 404 GET /api/contents/milvus_demo.db?content=0&hash=0&1749498504374 (bdd7d09606264cb5a6c3db2e35f81ef3@::1) 0.55ms referer=http://localhost:8005/lab/tree/lesson4/rag_milvus_deepseek2.ipynb
+[W 2025-06-09 21:48:24.376 ServerApp] 404 GET /api/contents/milvus_demo.db?content=0&hash=0&1749498504374 (::1): No such file or directory: milvus_demo.db
+[W 2025-06-09 21:48:24.377 ServerApp] 404 GET /api/contents/milvus_demo.db?content=0&hash=0&1749498504374 (bdd7d09606264cb5a6c3db2e35f81ef3@::1) 0.49ms referer=http://localhost:8005/lab/tree/lesson4/rag_milvus_deepseek2.ipynb
+[W 2025-06-09 21:48:24.377 ServerApp] 404 GET /api/contents/milvus_demo.db?content=0&hash=0&1749498504374 (::1): No such file or directory: milvus_demo.db
+[W 2025-06-09 21:48:24.377 ServerApp] 404 GET /api/contents/milvus_demo.db?content=0&hash=0&1749498504374 (bdd7d09606264cb5a6c3db2e35f81ef3@::1) 0.77ms referer=http://localhost:8005/lab/tree/lesson4/rag_milvus_deepseek2.ipynb
+[W 2025-06-09 21:48:24.377 ServerApp] 404 GET /api/contents/milvus_demo.db?content=0&hash=0&1749498504374 (::1): No such file or directory: milvus_demo.db
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-06-09 21:50:13.764 ServerApp] Saving file at /lesson4/rag_milvus_deepseek2.ipynb
+[I 2025-06-09 21:50:14.867 ServerApp] Kernel restarted: 8f476dd7-04a7-45ab-9533-e66d89fcca62
+[I 2025-06-09 21:50:14.872 ServerApp] Starting buffering for 8f476dd7-04a7-45ab-9533-e66d89fcca62:a4aea674-de4c-4827-b46c-da98015a6d62
+[I 2025-06-09 21:50:14.876 ServerApp] Connecting to kernel 8f476dd7-04a7-45ab-9533-e66d89fcca62.
+[I 2025-06-09 21:50:14.876 ServerApp] Restoring connection for 8f476dd7-04a7-45ab-9533-e66d89fcca62:a4aea674-de4c-4827-b46c-da98015a6d62
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-06-09 21:50:51.854 ServerApp] Saving file at /lesson4/rag_milvus_deepseek2.ipynb
