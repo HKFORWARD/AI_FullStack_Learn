@@ -1,0 +1,109 @@
+📚 修复版使用指南:
+==================================================
+
+🔧 修复的主要问题:
+1. ✅ 改进了 Ollama 连接验证逻辑
+2. ✅ 优化了错误处理和超时设置
+3. ✅ 增强了 JSON 解析的容错性
+4. ✅ 添加了自动模型选择功能
+5. ✅ 改进了系统提示词的兼容性
+
+🚀 使用步骤:
+1. 确保 Ollama 正在运行: ollama serve
+2. 下载所需模型: ollama pull llama3.2
+3. 运行程序: python xiaohongshu_generator.py
+
+🎯 推荐的 Ollama 模型:
+- llama3.2 (通用，推荐)
+- qwen2.5 (中文优化)
+- deepseek-r1 (如果可用)
+
+🔧 环境变量配置:
+export AI_PROVIDER=ollama
+export OLLAMA_MODEL=llama3.2
+export OLLAMA_BASE_URL=http://localhost:11434/v1
+
+
+🚀 小红书文案生成器 - 修复版
+==================================================
+🧪 快速测试 Ollama 连接...
+🤖 使用 Ollama 本地模型: deepseek-r1:8b
+🔍 检查 Ollama 服务: http://localhost:11434/api/tags
+✅ 发现 5 个可用模型: llama3.2:latest, deepseek-r1:14b, qwen3:14b...
+✅ 模型验证通过: deepseek-r1:8b
+🧠 使用 DeepSeek-R1 推理模型，支持复杂推理任务
+✅ 发现 5 个模型: llama3.2:latest, deepseek-r1:14b, qwen3:14b, qwen3:latest, deepseek-r1:8b
+🔗 连接到 OLLAMA: http://localhost:11434/v1
+🧪 测试 Ollama 连接...
+✅ Ollama 连接测试成功！
+✅ Ollama 配置成功！
+
+🤖 使用 Ollama 本地模型
+------------------------------
+🤖 使用 Ollama 本地模型: deepseek-r1:8b
+🔍 检查 Ollama 服务: http://localhost:11434/api/tags
+✅ 发现 5 个可用模型: llama3.2:latest, deepseek-r1:14b, qwen3:14b...
+✅ 模型验证通过: deepseek-r1:8b
+🧠 使用 DeepSeek-R1 推理模型，支持复杂推理任务
+🔗 连接到 OLLAMA: http://localhost:11434/v1
+🧪 测试 Ollama 连接...
+✅ Ollama 连接测试成功！
+
+🎯 开始测试文案生成
+📦 测试产品: 深海蓝藻保湿面膜
+
+🚀 开始生成小红书文案...
+📦 产品: 深海蓝藻保湿面膜
+🎨 风格: 活泼甜美
+🤖 使用模型: ollama - deepseek-r1:8b
+
+--- 第 1 轮推理 ---
+🤖 DeepSeek-R1 推理模式
+✅ JSON解析成功
+✅ 文案生成成功！
+💾 文件已保存: output/2025-06-15/深海蓝藻保湿面膜_ollama_210037.md
+✅ Ollama 生成成功，文件: output/2025-06-15/深海蓝藻保湿面膜_ollama_210037.md
+
+📝 生成的文案预览:
+标题: ✨深海蓝藻面膜！三天水光肌的秘密武器 💦
+正文: 姐妹们，最近天气超干燥的那种~
+每次洗完脸总觉得皮肤在呼救🌊💦 我疯狂补水试了各种面膜 都觉得效果不稳定 今天安利我最爱的小宝贝～「深海蓝藻保湿面膜」！
+质地超级轻薄不会有厚重感 活着的蓝藻精华真的好...
+标签: #保湿面膜 #抗初老面膜 #敏感肌护肤 #仙女水光肌 #肌肤急救
+
+🌐 测试 DeepSeek API
+------------------------------
+🌐 使用 DeepSeek API 服务: deepseek-chat
+🔗 连接到 DEEPSEEK: https://api.deepseek.com/v1
+
+🚀 开始生成小红书文案...
+📦 产品: 深海蓝藻保湿面膜
+🎨 风格: 活泼甜美
+🤖 使用模型: deepseek - deepseek-chat
+
+--- 第 1 轮推理 ---
+🤖 Agent决定调用工具...
+🔧 调用工具: query_product_database
+📝 参数: {'product_name': '深海蓝藻保湿面膜'}
+📊 [Tool] 查询产品数据库: 深海蓝藻保湿面膜
+📤 工具结果: 核心成分：深海蓝藻提取物，富含多糖和氨基酸。功效：深层补水、修护肌肤屏障、舒缓敏感。质地清爽不粘腻，适合所有肤质，特别适合干燥敏感肌。规格：25ml×5片
+
+--- 第 2 轮推理 ---
+🤖 Agent决定调用工具...
+🔧 调用工具: generate_emoji
+📝 参数: {'context': '深层补水、修护屏障、温和不刺激'}
+😊 [Tool] 生成表情符号，上下文: 深层补水、修护屏障、温和不刺激
+📤 工具结果: ['💧', '💦', '🌊', '✨']
+🔧 调用工具: generate_emoji
+📝 参数: {'context': '活泼甜美'}
+😊 [Tool] 生成表情符号，上下文: 活泼甜美
+📤 工具结果: ['💯', '🔥', '🤩', '💖']
+
+--- 第 3 轮推理 ---
+💭 Agent生成内容
+✅ JSON解析成功
+✅ 文案生成成功！
+💾 文件已保存: output/2025-06-15/深海蓝藻保湿面膜_deepseek_210118.md
+✅ DeepSeek 生成成功，文件: output/2025-06-15/深海蓝藻保湿面膜_deepseek_210118.md
+
+🏁 测试完成！输出文件保存在: output/
