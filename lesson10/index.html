@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏 - v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        <div class="score-board">
+            得分: <span id="score">0</span>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="game-messages">
+            <p id="gameStatusMessage">按空格键开始游戏</p>
+            <p class="controls-hint">
+                控制: 方向键 或 WASD | 暂停/开始: 空格键 | 重玩: R键
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
