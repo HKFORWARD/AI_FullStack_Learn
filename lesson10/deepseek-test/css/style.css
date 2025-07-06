@@ -1,0 +1,541 @@
+/*******************************************************************************
+* 项目名称: DeepSeek 官网前端测试版
+* 文件: style.css
+* 目的: 此文件为DeepSeek官网的前端视觉测试和学习项目提供样式。
+*       请注意：此网站并非DeepSeek官方网站，仅供测试使用。
+*******************************************************************************/
+
+/* 全局样式和重置 */
+:root {
+    --primary-color: #007bff;
+    /* DeepSeek 官网常用的蓝色 */
+    --primary-dark: #0056b3;
+    --secondary-color: #6c757d;
+    --accent-color: #8a2be2;
+    /* 紫色调 */
+    --background-light: #f8f9fa;
+    --text-dark: #212529;
+    --text-light: #ffffff;
+    --border-color: #dee2e6;
+    --warning-red: #dc3545;
+    /* 警告色 */
+    --warning-bg-red: #f8d7da;
+    /* 警告背景色 */
+    --font-inter: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-inter);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--text-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--background-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* 卡片样式 */
+.card {
+    background-color: var(--text-light);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* 顶部测试警告条 */
+.test-warning-strip {
+    background-color: var(--warning-bg-red);
+    color: var(--warning-red);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    /* 确保在导航栏上方 */
+    border-bottom: 1px solid var(--warning-red);
+}
+
+/* 头部导航栏 */
+.header {
+    background-color: var(--text-light);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 40px;
+    /* 紧随警告条下方 */
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.logo .test-label {
+    font-size: 0.6em;
+    vertical-align: super;
+    color: var(--warning-red);
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.nav-menu .nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu .nav-list li {
+    margin-left: 30px;
+}
+
+.nav-menu .nav-list a {
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-menu .nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu .nav-list a:hover::after {
+    width: 100%;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+/* 英雄区域 */
+.hero-section {
+    background: linear-gradient(135deg, #e0f2f7 0%, #d1e8ef 100%);
+    /* Light gradient background */
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    /* Make it taller */
+}
+
+.hero-section h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+
+.hero-section .subtitle {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section .test-emphasis {
+    display: block;
+    /* New line */
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--warning-red);
+    margin-top: 10px;
+}
+
+/* 模型展示区域 */
+.models-section h2 {
+    color: var(--text-dark);
+}
+
+.model-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.model-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.model-card p {
+    color: #666;
+    flex-grow: 1;
+    /* Make description take available space */
+    margin-bottom: 20px;
+}
+
+/* 产品展示区域 */
+.products-section h2 {
+    color: var(--text-dark);
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    color: #666;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* 关于我们区域 */
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.test-info-box {
+    background-color: var(--warning-bg-red);
+    border: 1px solid var(--warning-red);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test-info-box h3 {
+    color: var(--warning-red);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.test-info-box p {
+    color: var(--warning-red);
+    font-size: 1em;
+    line-height: 1.8;
+    text-align: left;
+    /* Override center alignment from .about-section p */
+    margin-bottom: 10px;
+}
+
+.test-info-box strong {
+    font-weight: 700;
+}
+
+/* 底部版权信息 */
+.footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-test-warning {
+    color: var(--warning-red);
+    /* 警告文字在深色背景上用红色 */
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px dashed rgba(255, 255, 255, 0.2);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--text-light);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 3em;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.3em;
+    }
+
+    .model-cards,
+    .product-cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    /* 导航栏 */
+    .nav-menu .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        /* Below the header */
+        left: 0;
+        background-color: var(--text-light);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid var(--border-color);
+        padding: 20px 0;
+    }
+
+    .nav-menu .nav-list.active {
+        display: flex;
+    }
+
+    .nav-menu .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-menu .nav-list a {
+        padding: 10px 0;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-menu .nav-list a::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header .container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-right: auto;
+        /* Push hamburger to the right */
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.1em;
+    }
+
+    .test-info-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .test-warning-strip {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .footer-test-warning {
+        font-size: 1em;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}

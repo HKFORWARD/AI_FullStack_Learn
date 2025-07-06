@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!--
+    /*******************************************************************************
+    * 项目名称: DeepSeek 官网前端测试版
+    * 文件: index.html
+    * 目的: 此文件为DeepSeek官网的前端视觉测试和学习项目。
+    *       请注意：此网站并非DeepSeek官方网站，仅供测试使用。
+    *       所有内容、图片、链接均为模拟或占位符，不代表官方信息。
+    *******************************************************************************/
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek 官网测试版 - 非官方</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- 全局测试网站声明条 -->
+    <div class="test-warning-strip">
+        <strong>此网站仅为前端测试用途，非DeepSeek官方网站。请勿误信。</strong>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                DeepSeek <span class="test-label">(测试版)</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" data-scroll-to="home">主页 (Home)</a></li>
+                    <li><a href="#models" data-scroll-to="models">模型 (Models)</a></li>
+                    <li><a href="#products" data-scroll-to="products">产品 (Products)</a></li>
+                    <li><a href="#about" data-scroll-to="about">关于 (About)</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>探索AI的未来</h1>
+                <p class="subtitle">高质量、开源、高效的AI模型。<br>
+                    <span class="test-emphasis">此网站仅为前端测试用途，非DeepSeek官方网站。</span>
+                </p>
+                <a href="#models" class="btn primary-btn" data-scroll-to="models">立即体验 (查看模型)</a>
+            </div>
+        </section>
+
+        <!-- 模型展示区域 -->
+        <section id="models" class="models-section section-padding">
+            <div class="container">
+                <h2>我们的模型</h2>
+                <div class="model-cards">
+                    <div class="card model-card">
+                        <h3>DeepSeek-LLM</h3>
+                        <p>一个强大的大型语言模型，具备卓越的文本生成和理解能力，支持多种语言和任务。</p>
+                        <a href="#" class="btn secondary-btn" aria-label="了解更多 DeepSeek-LLM">了解更多</a>
+                    </div>
+                    <div class="card model-card">
+                        <h3>DeepSeek-Coder</h3>
+                        <p>专为代码生成和辅助编程设计的模型，理解并生成高质量的代码片段，提升开发效率。</p>
+                        <a href="#" class="btn secondary-btn" aria-label="了解更多 DeepSeek-Coder">了解更多</a>
+                    </div>
+                    <div class="card model-card">
+                        <h3>DeepSeek-Math</h3>
+                        <p>专注于数学问题解决和推理的模型，能够处理复杂的数学表达式和逻辑推理任务。</p>
+                        <a href="#" class="btn secondary-btn" aria-label="了解更多 DeepSeek-Math">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品展示区域 -->
+        <section id="products" class="products-section section-padding bg-light">
+            <div class="container">
+                <h2>我们的产品</h2>
+                <div class="product-cards">
+                    <div class="card product-card">
+                        <h3>DeepSeek Chat</h3>
+                        <p>基于DeepSeek模型构建的智能聊天应用，提供流畅自然的对话体验。</p>
+                        <a href="#" class="btn primary-btn" aria-label="立即使用 DeepSeek Chat">立即使用</a>
+                    </div>
+                    <div class="card product-card">
+                        <h3>DeepSeek API</h3>
+                        <p>开放的API接口，让开发者轻松集成DeepSeek的AI能力到自己的应用中。</p>
+                        <a href="#" class="btn primary-btn" aria-label="立即使用 DeepSeek API">立即使用</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我们区域 -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2>关于我们</h2>
+                <p>DeepSeek 致力于推动人工智能技术的发展，通过提供高质量、开源的AI模型，赋能全球开发者和研究人员。我们相信开放与协作是加速AI创新的关键。</p>
+                <div class="test-info-box">
+                    <h3>关于此测试网站</h3>
+                    <p><strong>此网站为个人前端学习与测试项目，与DeepSeek官方无任何关联。</strong></p>
+                    <p>本站旨在模拟DeepSeek官网的视觉风格和基本布局，仅用于前端开发技能展示和学习目的。所有信息、图片和功能均为虚拟或占位符，请勿将其视为官方发布或真实业务。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 DeepSeek. All rights reserved.</p>
+            <p class="footer-test-warning">
+                <strong>重要提示：此网站仅供测试使用，非DeepSeek官方网站。请勿误信。</strong>
+            </p>
+            <div class="footer-links">
+                <a href="#">隐私政策 (虚拟)</a>
+                <a href="#">服务条款 (虚拟)</a>
+                <a href="#">联系我们 (虚拟)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
